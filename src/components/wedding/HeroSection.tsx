@@ -66,7 +66,7 @@ const HeroSection = ({ onOpen }: { onOpen: () => void }) => {
                 animate={{ y: -180, opacity: 1 }}
                 transition={{ duration: 1.4, delay: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
               >
-                <p className="font-script text-burgundy-deep text-2xl md:text-3xl">Yousef & Marwa</p>
+                <p className="font-script text-burgundy-deep text-2xl md:text-3xl">Mostafa & Hager</p>
                 <div className="separator-ornament w-24 my-2" />
                 <p className="font-body text-burgundy text-sm">05 . 06 . 2026</p>
               </motion.div>
