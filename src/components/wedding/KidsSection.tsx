@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import kidsPhoto from "@/assets/kids-photo.jpeg";
+import kidsPhoto from "@/assets/kids-photo.png";
 
 const slowFade = { duration: 1.8, ease: "easeOut" as const };
 
@@ -41,7 +41,7 @@ const KidsSection = () => {
           transition={{ duration: 2, ease: "easeOut" }}
         >
           <div className="relative rounded-xl overflow-hidden gold-border gold-glow">
-            <img src={kidsPhoto} alt="Yousef and Marwa as children" className="w-full h-auto" loading="lazy" />
+            <img src={kidsPhoto} alt="Mostafa and Hager as children" className="w-full h-auto" loading="lazy" />
             <div className="absolute inset-0 bg-gradient-to-t from-burgundy-deep/20 to-transparent" />
           </div>
         </motion.div>

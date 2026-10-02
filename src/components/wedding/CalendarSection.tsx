@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const DAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+const DAYS = ["Sat", "Sun", "Mon", "Tue", "Wed", "Thu", "Fri"];
 const MAY_2026 = [
   [null, null, null, null, null, 1, 2],
   [3, 4, 5, 6, 7, 8, 9],
@@ -10,7 +10,7 @@ const MAY_2026 = [
   [31, null, null, null, null, null, null],
 ];
 
-const HIGHLIGHT_DAY = 6;
+const HIGHLIGHT_DAY = 9;
 const slowFade = { duration: 1.8, ease: "easeOut" as const };
 
 const CalendarSection = () => {
@@ -50,7 +50,7 @@ const CalendarSection = () => {
           viewport={{ once: true }}
           transition={{ ...slowFade, delay: 0.4 }}
         >
-          May 2026
+          October 2026
         </motion.p>
 
         <motion.div
@@ -96,7 +96,7 @@ const CalendarSection = () => {
           viewport={{ once: true }}
           transition={{ ...slowFade, delay: 1 }}
         >
-          ✦ From 5 PM until midnight ✦
+          ✦ From 8 PM until midnight ✦
         </motion.p>
       </div>
     </section>

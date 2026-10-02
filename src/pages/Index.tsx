@@ -16,7 +16,7 @@ const Index = () => {
 
   const startMusic = () => {
     if (audioRef.current) {
-      audioRef.current.volume = 0.6;
+      audioRef.current.volume = 0.07;
       audioRef.current.play().catch(() => {});
     }
   };
@@ -47,8 +47,8 @@ const Index = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 1.4 }}
           >
-            <InvitationCard />
             <KidsSection />
+            <InvitationCard />
             <CalendarSection />
             <RsvpSection />
             <InstapaySection />

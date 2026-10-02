@@ -29,14 +29,14 @@ const FooterSection = () => {
           viewport={{ once: true }}
           transition={{ duration: 2 }}
         >
-          <svg viewBox="0 0 200 140" className="w-40 h-28 mx-auto">
+          {/* <svg viewBox="0 0 200 140" className="w-40 h-28 mx-auto">
             <rect x="20" y="30" width="160" height="100" rx="6" fill="hsl(40, 35%, 96%)" stroke="hsl(40, 65%, 45%)" strokeWidth="1" />
             <path d="M20 30 L100 85 L180 30" fill="none" stroke="hsl(40, 65%, 45%)" strokeWidth="1" />
             <circle cx="100" cy="95" r="16" fill="hsl(0, 55%, 20%)" stroke="hsl(40, 65%, 45%)" strokeWidth="1" />
             <text x="100" y="100" textAnchor="middle" fill="hsl(40, 65%, 45%)" fontSize="12" fontFamily="Great Vibes">
               Y&M
             </text>
-          </svg>
+          </svg> */}
         </motion.div>
 
         <motion.h2
@@ -46,7 +46,7 @@ const FooterSection = () => {
           viewport={{ once: true }}
           transition={{ ...slowFade, delay: 0.7 }}
         >
-          Awaiting you with love
+          Awaiting you with love  
         </motion.h2>
 
         <motion.div
@@ -57,6 +57,18 @@ const FooterSection = () => {
           transition={{ duration: 1.6, delay: 1 }}
         />
 
+
+   <motion.p
+          className="font-display text-gold text-xl tracking-wider mb-2"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ ...slowFade, delay: 1.2 }}
+        >
+"      ربنا يخليلي هاجر، ويكتبلنا الخير والسعادة في كل اللي جاي سوا     "
+        </motion.p>
+
+
         <motion.p
           className="font-display text-gold text-xl tracking-wider mb-2"
           initial={{ opacity: 0 }}
@@ -64,7 +76,7 @@ const FooterSection = () => {
           viewport={{ once: true }}
           transition={{ ...slowFade, delay: 1.2 }}
         >
-          Yousef & Marwa
+          Mostafa & Hager
         </motion.p>
 
         <motion.p
@@ -74,7 +86,7 @@ const FooterSection = () => {
           viewport={{ once: true }}
           transition={{ ...slowFade, delay: 1.4 }}
         >
-          2026
+        9/10/2026
         </motion.p>
       </div>
     </footer>

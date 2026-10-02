@@ -33,10 +33,10 @@ const LocationSection = () => {
           </motion.div>
 
           <h3 className="font-display text-burgundy-deep text-2xl md:text-3xl font-bold mb-2">
-            Al Qasr
+            CRYSTAL
           </h3>
           <p className="font-body text-burgundy text-lg mb-1">Wedding Hall</p>
-          <p className="font-body text-burgundy/80 text-base">Sohag, Egypt</p>
+          <p className="font-body text-burgundy/80 text-base">Tahta, Sohag</p>
 
           <div className="separator-ornament w-24 mx-auto my-6" />
 

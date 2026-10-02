@@ -34,7 +34,7 @@ const InvitationCard = () => {
               viewport={{ once: true }}
               transition={{ ...slowFade, delay: 0.4 }}
             >
-              Yousef & Marwa
+              Mostafa & Hager
             </motion.h2>
 
             <motion.div
@@ -65,10 +65,12 @@ const InvitationCard = () => {
               transition={{ ...slowFade, delay: 1.3 }}
             >
               <p className="font-display text-burgundy-deep text-lg font-semibold tracking-wider">
-                May 6, 2026
+                October 9, 2026
               </p>
+               <p className="font-display text-burgundy-deep text-lg font-semibold tracking-wider">
+Friday               </p>
               <p className="font-body text-burgundy text-base">
-                From 5:00 PM until midnight
+                From 8:00 PM until midnight
               </p>
             </motion.div>
 

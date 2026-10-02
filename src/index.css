@@ -6,54 +6,61 @@
 
 @layer base {
   :root {
-    --background: 36 27% 92%;
-    --foreground: 0 45% 18%;
+    /* Pink #FFC5D5 */
+    --background: 342 100% 92%;
+    --foreground: 78 16% 49%;
 
-    --card: 36 27% 92%;
-    --card-foreground: 0 45% 18%;
+    --card: 342 100% 92%;
+    --card-foreground: 78 16% 49%;
 
-    --popover: 40 30% 98%;
-    --popover-foreground: 0 45% 18%;
+    --popover: 342 100% 92%;
+    --popover-foreground: 78 16% 49%;
 
-    --primary: 40 60% 45%;
-    --primary-foreground: 40 30% 98%;
+    --primary: 78 16% 49%;
+    --primary-foreground: 342 100% 92%;
 
-    --secondary: 40 25% 92%;
-    --secondary-foreground: 0 45% 18%;
+    --secondary: 342 100% 92%;
+    --secondary-foreground: 78 16% 49%;
 
-    --muted: 40 20% 90%;
-    --muted-foreground: 0 30% 35%;
+    --muted: 343 65% 85%;
+    --muted-foreground: 78 16% 49%;
 
-    --accent: 0 50% 30%;
-    --accent-foreground: 40 30% 96%;
+    --accent: 78 16% 49%;
+    --accent-foreground: 342 100% 92%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 40 30% 80%;
-    --input: 40 30% 80%;
-    --ring: 40 60% 45%;
+    --border: 78 16% 49%;
+    --input: 78 16% 49%;
+    --ring: 78 16% 49%;
 
     --radius: 0.5rem;
 
-    --burgundy: 0 40% 18%;
-    --burgundy-deep: 0 45% 12%;
-    --burgundy-light: 0 35% 28%;
-    --gold: 40 60% 55%;
-    --gold-light: 42 70% 70%;
-    --gold-bright: 45 80% 60%;
-    --cream: 40 30% 92%;
-    --cream-dark: 35 20% 82%;
-    --wine: 345 50% 25%;
+    /* Pink Background #FFC5D5 */
+    --burgundy: 342 100% 92%;
+    --burgundy-deep: 342 100% 92%;
+    --burgundy-light: 342 100% 92%;
 
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Olive #7F8F6B */
+    --gold: 78 16% 49%;
+    --gold-light: 78 16% 49%;
+    --gold-bright: 78 16% 49%;
+
+    /* Existing cream text becomes Olive */
+    --cream: 78 16% 49%;
+    --cream-dark: 78 16% 49%;
+
+    --wine: 78 16% 49%;
+
+    --sidebar-background: 342 100% 92%;
+    --sidebar-foreground: 78 16% 49%;
+    --sidebar-primary: 78 16% 49%;
+    --sidebar-primary-foreground: 342 100% 92%;
+    --sidebar-accent: 343 65% 85%;
+    --sidebar-accent-foreground: 78 16% 49%;
+    --sidebar-border: 78 16% 49%;
+    --sidebar-ring: 78 16% 49%;
   }
 }
 
@@ -90,18 +97,30 @@
   }
 
   .text-gold-gradient {
-    background: linear-gradient(135deg, hsl(var(--gold-light)), hsl(var(--gold)), hsl(var(--gold-bright)));
+    background: linear-gradient(
+      135deg,
+      hsl(var(--gold-light)),
+      hsl(var(--gold)),
+      hsl(var(--gold-bright))
+    );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
   .bg-burgundy-gradient {
-    background: linear-gradient(180deg, hsl(var(--burgundy-deep)), hsl(var(--burgundy)), hsl(var(--burgundy-deep)));
+    background: linear-gradient(
+      180deg,
+      hsl(var(--burgundy-deep)),
+      hsl(var(--burgundy)),
+      hsl(var(--burgundy-deep))
+    );
   }
 
   .gold-glow {
-    box-shadow: 0 0 30px hsl(var(--gold) / 0.15), 0 0 60px hsl(var(--gold) / 0.08);
+    box-shadow:
+      0 0 30px hsl(var(--gold) / 0.15),
+      0 0 60px hsl(var(--gold) / 0.08);
   }
 
   .gold-border {
@@ -109,7 +128,12 @@
   }
 
   .separator-ornament {
-    background: linear-gradient(90deg, transparent, hsl(var(--gold) / 0.5), transparent);
+    background: linear-gradient(
+      90deg,
+      transparent,
+      hsl(var(--gold) / 0.5),
+      transparent
+    );
     height: 1px;
   }
 }
@@ -118,9 +142,11 @@
 ::-webkit-scrollbar {
   width: 6px;
 }
+
 ::-webkit-scrollbar-track {
   background: hsl(var(--burgundy-deep));
 }
+
 ::-webkit-scrollbar-thumb {
   background: hsl(var(--gold) / 0.3);
   border-radius: 3px;
@@ -128,8 +154,13 @@
 
 /* Glow pulse for calendar */
 @keyframes glow-pulse {
-  0%, 100% { box-shadow: 0 0 8px hsl(var(--gold) / 0.4); }
-  50% { box-shadow: 0 0 20px hsl(var(--gold) / 0.7); }
+  0%, 100% {
+    box-shadow: 0 0 8px hsl(var(--gold) / 0.4);
+  }
+
+  50% {
+    box-shadow: 0 0 20px hsl(var(--gold) / 0.7);
+  }
 }
 
 .animate-glow-pulse {
@@ -137,8 +168,13 @@
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
+  0%, 100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 .animate-float {
@@ -146,8 +182,15 @@
 }
 
 @keyframes sparkle {
-  0%, 100% { opacity: 0.3; transform: scale(0.8); }
-  50% { opacity: 1; transform: scale(1.2); }
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
 }
 
 .animate-sparkle {
