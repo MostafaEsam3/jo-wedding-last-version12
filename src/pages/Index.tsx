@@ -9,6 +9,7 @@ import InstapaySection from "@/components/wedding/InstapaySection";
 import LocationSection from "@/components/wedding/LocationSection";
 import DressCodeSection from "@/components/wedding/DressCodeSection";
 import FooterSection from "@/components/wedding/FooterSection";
+import GuestBook from "@/components/wedding/Wish";
 
 const Index = () => {
   const [envelopeOpened, setEnvelopeOpened] = useState(false);
@@ -50,7 +51,8 @@ const Index = () => {
             <KidsSection />
             <InvitationCard />
             <CalendarSection />
-            <RsvpSection />
+            {/* <RsvpSection /> */}
+            <GuestBook />
             <InstapaySection />
             <LocationSection />
             <DressCodeSection />

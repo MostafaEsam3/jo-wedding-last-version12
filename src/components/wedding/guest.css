@@ -1,0 +1,5 @@
+.guest {
+  min-height: 100vh;
+  background: hsl(var(--gold));
+  font-style: normal;
+}

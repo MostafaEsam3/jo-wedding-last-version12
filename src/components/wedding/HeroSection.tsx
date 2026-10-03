@@ -68,7 +68,7 @@ const HeroSection = ({ onOpen }: { onOpen: () => void }) => {
               >
                 <p className="font-script text-burgundy-deep text-2xl md:text-3xl">Mostafa & Hager</p>
                 <div className="separator-ornament w-24 my-2" />
-                <p className="font-body text-burgundy text-sm">05 . 06 . 2026</p>
+                <p className="font-body text-burgundy text-sm">09 . 10 . 2026</p>
               </motion.div>
             )}
           </AnimatePresence>
