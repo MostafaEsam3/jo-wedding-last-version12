@@ -1,5 +1,5 @@
 const API_URL =
-  'https://mostafa-wedding-backend.vercel.app/api/api';
+  'https://mostafa-wedding-backend.vercel.app/api';
 
 export async function createWish(data) {
   const response = await fetch(`${API_URL}/wishes`, {
